@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/pinmap"
+        android:title="Pin Map"/>
+    <item
+        android:id="@+id/viewmypin"
+        android:title="View My Pin"/>
+    <item
+        android:id="@+id/viewallpins"
+        android:title="View All Pins"/>
+    <item
+        android:id="@+id/howitwork"
+        android:title="How it works"/>
+    <item
+        android:id="@+id/editpin"
+        android:title="Edit My Pin"/>
+    <item
+        android:id="@+id/deletepin"
+        android:title="Delete My Pin"
+        android:visible="false"/>
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+    />
+
+</menu>
