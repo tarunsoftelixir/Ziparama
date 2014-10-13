@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+     android:focusableInTouchMode="true"
+    android:layout_height="match_parent" >
+     <include
+        android:id="@+id/header"
+        layout="@layout/listview_header_row" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@id/header"
+        android:background="@drawable/background" >
+
+        <ImageView
+            android:id="@+id/pinmap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/pinmap" />
+
+        <ImageView
+            android:id="@+id/viewall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/viewall" />
+
+        <ImageView
+            android:id="@+id/viewmypins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/viewmypins" />
+
+        <ImageView
+            android:id="@+id/howitwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/howitwork" />
+    </LinearLayout>
+
+</RelativeLayout>

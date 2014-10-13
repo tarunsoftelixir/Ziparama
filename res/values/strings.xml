@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PinAnimationOnMap</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="photo">Add photo (optional)</string>
+   
+
+   
+
+    <string name="howItWork"> 1. Accept our terms and conditions of pinning the map.\n\n
+ 2. Log-in via Facebook (we don’t see your login details so don’t be concerned with privacy issues).\n\n
+ 3. Click on “Pin Map”.\n\n
+ 4. Move the map with your finger until the pin is over a place where you want to make your announcement!\n\n
+ 5. Add a photo (optional), title and description.\n\n
+ 6. Choose a category for your pin.\n\n
+ 7. Add your email (optional) and a link to a website (optional).\n\n
+ 8. Preview your pin before submitting.\n\n
+ 9. Want to post to Facebook or Twitter at the same time? Just tick the boxes.\n\n
+10. Submit the ad then click on “View Map” to see your pin.\n\n</string>
+
+</resources>

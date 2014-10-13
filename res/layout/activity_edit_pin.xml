@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:padding="15dp" >
+
+        <LinearLayout
+            android:id="@+id/homeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:weightSum="1" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dip"
+                android:layout_weight="0.2"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/userImagemy"
+                    android:layout_width="113px"
+                    android:layout_height="87px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:clickable="false"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/photo" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/userImagemy"
+                    android:text="Tap to rotate image"
+                    android:textColor="@android:color/background_dark" />
+
+                <ImageButton
+                    android:id="@+id/rotateedit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toRightOf="@id/userImagemy"
+                    android:background="@drawable/rotate" />
+
+                <ProgressBar
+                    android:id="@+id/image_loadingedit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/pintitlemy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginRight="14dip"
+                    android:layout_marginTop="0dip"
+                    android:hint="Pin Title"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/limit_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/pintitlemy"
+                    android:gravity="right"
+                    android:text="0/500" />
+
+                <EditText
+                    android:id="@+id/pindescriptionmy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pintitlemy"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginRight="14dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="top|left"
+                    android:hint="Description (max 500 characters)"
+                    android:inputType="textMultiLine"
+                    android:maxLength="500"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:scrollbars="vertical"
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:id="@+id/categoryedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pindescriptionmy"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginRight="14dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="top|left" />
+
+                <Spinner
+                    android:id="@+id/subcategoryedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/categoryedit"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginRight="14dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="top|left" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/bottomlinear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <Button
+                    android:id="@+id/okbtn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/roundcorner"
+                    android:padding="5dp"
+                    android:text="Ok"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/canclebtn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/roundcorner"
+                    android:padding="5dp"
+                    android:text="Cancle"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/btn_cancel_edit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/cancle" />
+
+</RelativeLayout>
